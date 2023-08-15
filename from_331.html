@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>แบบฟอร์มคำขอลาออก</title>
+  <style>
+    body {
+      font-size: 14px;
+      line-height: 1.4;
+      background-color: #f0f0f0; /* Set background color for the whole page */
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #fff; /* Set background color for the form container */
+      border-radius: 10px; /* Add rounded corners */
+      padding: 20px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    }
+
+    form {
+      width: 100%;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc; /* Add a border around the input fields */
+      border-radius: 5px; /* Add rounded corners */
+    }
+
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    button[type="submit"] {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px; /* Add rounded corners */
+    }
+
+    button[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center; color: #4CAF50;">แบบฟอร์มคำขอลาออก</h1>
+  <div class="container">
+    <div style="text-align: right;">
+      <p><b>เขียนที่</b> มหาวิทยาลัยแม่โจ้</p>
+    </div>
+    <label></label><br>
+
+    <form id="leaveForm">
+        <label for="day">วันที่ เดือน ปี 
+        <input type="date" id="day" name="day">
+         </label><br>
+        
+        <label><b>เรื่อง</b> ขอลาออก</label>
+        <label></label><br>
+        <label><b>เรียน</b> อธิการบดี ผ่าน คณบดี
+        </label><br>
+  
+        <label>คณะ</label>
+        <select id="faculty" name="faculty">
+          <option value=""></option>
+          <option value="วิทยาศาสตร์">วิทยาศาสตร์</option>
+          <option value="บริหารธุรกิจ">บริหารธุรกิจ</option>
+          <option value="ผลิตกรรมการเกษตร">ผลิตกรรมการเกษตร</option>
+          <option value="ศิลปศาสตร์">ศิลปศาสตร์</option>
+          <option value="สถาปัตยกรรมศาสตร์ และการออกแบบสิ่งแวดล้อม ">สถาปัตยกรรมศาสตร์ และการออกแบบสิ่งแวดล้อม </option>
+          <option value="สารสนเทศและการสื่อสาร ">สารสนเทศและการสื่อสาร </option>
+          <option value="เทคโนโลยีการประมง และทรัพยากรทางน้ำ">เทคโนโลยีการประมง และทรัพยากรทางน้ำ</option>
+          <option value="วิศวกรรมและอุตสาหกรรมเกษตร ">วิศวกรรมและอุตสาหกรรมเกษตร </option>
+          <option value="พัฒนาการท่องเที่ยว ">พัฒนาการท่องเที่ยว </option>
+          <option value="เศรษฐศาสตร์ ">เศรษฐศาสตร์ </option>
+          <option value="สัตวศาสตร์และเทคโนโลยี ">สัตวศาสตร์และเทคโนโลยี </option>
+          <option value="คณะพยาบาลศาสตร์">คณะพยาบาลศาสตร์</option>
+          <option value="คณะสัตวแพทย์ศาสตร์">คณะสัตวแพทย์ศาสตร์</option>
+          <!-- Add more faculty options here -->
+        </select>
+      
+  
+
+       <label></label><br>
+       <label>ข้าพเจ้า <input type="checkbox" >นาย <input type="checkbox">
+          นาง<input type="checkbox">นางสาว
+          
+        </label><br>
+
+        <label>ชื่อ-นามสกุล <input type="text" name="Name">
+        </label> <br>
+
+        
+        <label>สาขาวิชา <input type="text"></label><br>
+
+
+   <label>คณะ</label>
+        <select id="faculty" name="faculty">
+          <option value=""></option>
+          <option value="วิทยาศาสตร์">วิทยาศาสตร์</option>
+          <option value="บริหารธุรกิจ">บริหารธุรกิจ</option>
+          <option value="ผลิตกรรมการเกษตร">ผลิตกรรมการเกษตร</option>
+          <option value="ศิลปศาสตร์">ศิลปศาสตร์</option>
+          <option value="สถาปัตยกรรมศาสตร์ และการออกแบบสิ่งแวดล้อม ">สถาปัตยกรรมศาสตร์ และการออกแบบสิ่งแวดล้อม </option>
+          <option value="สารสนเทศและการสื่อสาร ">สารสนเทศและการสื่อสาร </option>
+          <option value="เทคโนโลยีการประมง และทรัพยากรทางน้ำ">เทคโนโลยีการประมง และทรัพยากรทางน้ำ</option>
+          <option value="วิศวกรรมและอุตสาหกรรมเกษตร ">วิศวกรรมและอุตสาหกรรมเกษตร </option>
+          <option value="พัฒนาการท่องเที่ยว ">พัฒนาการท่องเที่ยว </option>
+          <option value="เศรษฐศาสตร์ ">เศรษฐศาสตร์ </option>
+          <option value="สัตวศาสตร์และเทคโนโลยี ">สัตวศาสตร์และเทคโนโลยี </option>
+          <option value="คณะพยาบาลศาสตร์">คณะพยาบาลศาสตร์</option>
+          <option value="คณะสัตวแพทย์ศาสตร์">คณะสัตวแพทย์ศาสตร์</option>
+        </select>
+
+        <label>โปรดระบุ<label>หลักสูตร ปริญญาตรี  <input type="checkbox"> 4-5ปี <input type="checkbox"> 4ปีเทียบเท่าเรียน(2ปี) <input type="checkbox"> ภาคปกติ <input type="checkbox"> ภาคสมทบ </label> <br>
+  
+        <label>รหัสนักศึกษา (10หลัก) <input type="text">  โทรศัพท์มือถือ (10หลัก) <input type="text"></label>
+  
+        <label>มีความประสงค์จะขอลาออก เนื่องจาก</label>
+        <textarea cols="50" rows="4"></textarea> <br>
+  
+        <label>พร้อมแนบใบยินยอมขอลาออกจากผู้ปกครอง</label><br>
+  
+        <label>จึงเรียนมาเพื่อโปรดพิจารณา</label>
+  
+ 
+        <label for="signature" style="display: flex; flex-direction: column; align-items: center;">
+
+          ขอแสดงความนับถือ
+
+          <input type="file" id="signature" name="sign" accept=".jpg, .jpeg, .png, .pdf">
+
+          นักศึกษา
+        </label><br>
+        
+
+        
+   <!-- ... Existing form code ... -->
+
+<div style="display: flex; justify-content: space-between;">
+
+  <button type="reset" style="width: 48%;">รีเซ็ต</button>
+  <button type="submit" style="width: 48%;">ส่งคำขอ</button>
+  
+
+
+<!-- ... Rest of the form code ... -->
+
+
+  </div>
+</body>
+</html>

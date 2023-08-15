@@ -1,0 +1,39 @@
+body{
+    background-color: whitesmoke;
+}
+.box{
+    position: fixed;
+    background-color: rgb(2, 74, 206);
+    height: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+}
+footer{
+    position: fixed;
+    background-color: rgb(9, 9, 61);
+    height: 30px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+}
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+.boxs-1, .boxs-2, .boxs-3, .boxs-4, .boxs-5, .boxs-6 {
+    background: rgb(255, 90, 49);
+    width: 320px;
+    height: 320px;
+    margin: 5px;
+}
+
+@media (min-width: 577px) and (max-width: 768px){}
+@media (min-width: 769px) and (max-width: 992px){}
+@media (min-width: 993px) and (max-width: 1200px){}
+@media(min-width: 1201px) and (max-width: 1400px){}

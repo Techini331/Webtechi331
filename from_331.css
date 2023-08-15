@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* สีพื้นหลัง */
+}
+
+.container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff; /* สีพื้นหลังของกล่องใบลาออก */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้กล่องใบลาออก */
+}
+
+h1 {
+  text-align: center;
+  color: #007bff; /* สีของตัวอักษรในหัวเรื่อง */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333; /* สีของตัวอักษรในป้ายชื่อ */
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* เพิ่มเอฟเฟกต์สำหรับปุ่ม */
+}
+
+button:hover {
+  background-color: #0056b3; /* เปลี่ยนสีพื้นหลังของปุ่มเมื่อเมาส์ชี้ */
+}
+
+#signature {
+  position: fixed; /* ตั้งค่าประเภทการจัดตำแหน่งเป็น fixed */
+  left: 50%; /* ตั้งค่าการจัดตำแหน่งตามแกน X ที่ 50% (กึ่งกลาง) */
+  top: 50%; /* ตั้งค่าการจัดตำแหน่งตามแกน Y ที่ 50% (กึ่งกลาง) */
+  transform: translate(-50%, -50%); /* ใช้ transform เพื่อปรับตำแหน่งจากจุดกึ่งกลางของปุ่ม */
+}
