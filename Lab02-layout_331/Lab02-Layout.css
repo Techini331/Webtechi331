@@ -1,0 +1,64 @@
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0px -10px;
+}
+  
+.item {
+    box-sizing: border-box;
+    width: 350px;
+    height: 350px;
+    margin: 15px;
+}
+  
+.content {
+    color: #242424;
+    background-color: #1bbefe;
+    font-weight: 600;
+    text-align: center;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 10px;
+}
+.header-box {
+    background-color: rgb(76, 84, 179);
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #000;
+}
+  
+.footer-box {
+    background-color: rgb(23, 38, 205);
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #000;
+}
+@media (min-width: 576px) {
+    .box {
+      flex: 0 1 calc(100% - 10px); /* 1 คอลัมน์ในแต่ละแถว */
+    }
+}
+@media (min-width: 768px) {
+    .box {
+      flex: 0 1 calc(50% - 10px); /* 3 คอลัมน์ในแต่ละแถว (เหมือนเดิม) */
+    }
+}
+ @media (min-width: 992px) {
+    .box {
+      flex: 0 1 calc(33.33% - 10px); /*  3 คอลัมน์ในแต่ละแถว */
+    }
+}
+@media (min-width: 1200px) {
+    .box {
+      flex: 0 1 calc(33.33% - 10px); /* 3 คอลัมน์ในแต่ละแถว */
+    }
+}
+@media (min-width: 1400px) {
+    .box {
+      flex: 0 1 calc(33.33% - 10px); /* 3 คอลัมน์ในแต่ละแถว */
+    }
+}
